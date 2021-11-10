@@ -1,0 +1,179 @@
+/*AUXILIO
+1- No se como hacer que se me oculte el icono de hamburguesa en tablets y escritorios
+2- El cuadradito de buscar productos lo tengo que hacer con un form? No entendi el code review de la clase 6
+3-No se esconder cosas u.u (mostrar como escondi la descripcion en la clase 16 y chequear que sea valido)
+*/
+
+
+/*
+
+------HEADER------
+
+*/
+
+header {
+    background-color: #EAC926;
+    font-family: 'Roboto';
+    font-size: 15px;
+    padding:10px;
+}
+.logoYBusqueda{
+    display:flex;
+    flex-wrap: wrap;
+}
+.logo {width:50%}
+.buscarProductos {width:50%}
+.ultima-visita{font-size: 24px;}
+.ofertas{font-size: 24px;}
+.precio{font-size: 18px;}
+.descuentos{font-size: 16px;}
+.descripcion{
+font-size: 16px;}
+.burger-menu{text-align: center;}
+.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    height: auto;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: auto;
+}
+
+/*
+
+------BODY------
+
+*/
+section.banner img{
+    width: 100%;
+    margin-top: 10px;
+}
+article{
+    margin: 10px;
+}
+main section article i{
+color: green;
+padding: 8px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+transition:1500ms;
+}
+main section article i:hover {
+    transform: rotateZ(-90deg) ;
+}
+
+main article {
+text-align: left;
+border: 1px solid #ebebeb;
+padding: 15px; 
+}
+.descuentos{
+    color:#39b54a;
+    width:70%;
+    text-align: center;
+}
+.precio {
+    width:30%;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+main section article {
+    width:200px;
+}
+main section article:hover {
+    box-shadow: 22px 25px 13px -9px rgba(0,0,0,0.75);
+-webkit-box-shadow: 22px 25px 13px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 22px 25px 13px -9px rgba(0,0,0,0.75);
+}
+main section article img{
+    width: 100%;
+}
+.descripcion{
+    color:transparent;
+    transition: 500ms;
+    }
+.descripcion:hover {
+    color:gray; 
+    }
+
+
+@media (max-width: 361px){
+    main section article .descripcion{
+    display: none;
+}
+.sitio {
+    display:none;
+}
+}
+@media (min-width: 361px){
+    .sitio{
+        display:flex;
+        flex-wrap:nowrap;
+        position:relative;
+        justify-content: space-between 
+    }
+    .encabezado {
+        display:flex;
+        flex-wrap:wrap;
+        position:relative;
+        justify-content: space-between 
+    }
+}
+
+@media (min-width: 769px){
+    footer section{
+        display:flex;
+        flex-wrap:nowrap;
+        position:relative;
+    }
+    footer section article i:hover {
+        color: #06c98e;
+    }
+}
+
+
+.datos-producto {
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+}
+
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+main section {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+.login-B:hover{
+background-color: #0022AA;
+color: #0022AA;
+}
+footer section {
+    text-align: center;
+}
+.copyright{
+    text-align: left;
+    color:gray;
+    font-size:16px;
+}
+footer section i {
+    color:#0022AA;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
